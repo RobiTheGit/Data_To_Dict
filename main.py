@@ -23,4 +23,7 @@ def MakeDict(datafile):					#	<FUNCTION (MakeDict) BEGIN>
         print(Dict)					#	if so, print it
     pass						#	<FUNCTION (MakeDict) END>
 
-MakeDict(Data)						#	Run the code for making the dictionary from the file
+if __name__ == "__main__":				#	Are we running the script itself
+    MakeDict(Data)					#	If so, run the code for making the dictionary from the file
+else:							#	If we aren't
+    pass						#	Don't run anything (call with MakeDict(<datafile>) instead)
