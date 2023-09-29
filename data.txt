@@ -1,0 +1,4 @@
+Smith|James|9/9/1983|Male|40
+Doe|John|9/1/1980|Male|43
+Smith|James|9/9/1983|Male|40
+Larsen|Clara|5/3/1973|Female|50
