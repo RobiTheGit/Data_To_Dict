@@ -8,4 +8,4 @@ Each line is commented into mostly-plain english
 
 Duplicates get removed from the data dictionary before it is even made
 
-Please read the Wiki if you want to use this.
+Please read the [Wiki](https://github.com/RobiTheGit/Data_To_Dict/wiki) if you want to use this.
