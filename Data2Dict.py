@@ -6,10 +6,9 @@ if __name__ == "__main__":				#	Are we running the script itself
     Sep1 = '|'						#	Define the seperator character for person information entry as "|"
     Sep2 = '\n'						#	Define the seperator character for a new person as a newline
 
-global Dict, datalist, print_output			#	Global the required variables
+global Dict, datalist					#	Global the required variables
 Dict = {}						#	Set up the dictionary
 datalist = []						#	Define datalist (only used for making the dict)
-print_output = True					#	Set printing the final dictionary to True
 
 def MakeDict(datafile, sep1, sep2, print_output):		#	<FUNCTION (MakeDict) BEGIN>
     datafile2 = datafile.readlines()			#	Read the lines from the data file
