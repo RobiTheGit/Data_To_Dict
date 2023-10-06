@@ -10,7 +10,7 @@ global Dict, datalist					#	Global the required variables
 Dict = {}						#	Set up the dictionary
 datalist = []						#	Define datalist (only used for making the dict)
 
-def MakeDict(datafile, sep1, sep2, print_output):	#	<FUNCTION (MakeDict) BEGIN>
+def MakeDict(datafile, sep1, sep2, OUTPUTVALUE):	#	<FUNCTION (MakeDict) BEGIN>
     datafile2 = datafile.readlines()			#	Read the lines from the data file
     res = []						#	Define a result list
     [res.append(x) for x in datafile2 if x not in res]	#	Append all unique items to the list
@@ -21,7 +21,7 @@ def MakeDict(datafile, sep1, sep2, print_output):	#	<FUNCTION (MakeDict) BEGIN>
         for y in range(len(dataitem)):			#	Repeat for the all people in the data
             Dict[x] = datalist[x].split(sep1)		#	Define the UserID for the person and put in the data for them
             Dict[x][x] = dataitem[x]			#	Add the user info into a list in the Dict entry
-    if print_output == True: 				#	Are we printing the final dict?
+    if OUTPUTVALUE == True: 				#	Are we printing the final dict?
         print(Dict)					#	if so, print it
     return Dict						#	Send it to a variable so we can print it later
     pass						#	<FUNCTION (MakeDict) END>
@@ -29,4 +29,4 @@ def MakeDict(datafile, sep1, sep2, print_output):	#	<FUNCTION (MakeDict) BEGIN>
 if __name__ == "__main__":				#	Are we running the script itself
     MakeDict(Data, Sep1, Sep2, True)			#	If so, run the code for making the dictionary from the file
 else:							#	If we aren't
-    pass						#	Don't run anything (call with MakeDict(<datafile>) instead)
+    pass						#	Don't run anything (call with MakeDict(<datafile>, sep1, sep2, OUTPUTVALUE) instead)
