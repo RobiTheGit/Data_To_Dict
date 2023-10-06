@@ -2,7 +2,7 @@
 if __name__ == "__main__":				#	Are we running the script itself
     global Sep1, Sep2					#	Global the required variables for running by itself
     File = "data.txt"					#	Open data.txt (this file can be anything)
-    Data = open(File,'r')					#	Open the file in read only mode
+    Data = open(File,'r')				#	Open the file in read only mode
     Sep1 = '|'						#	Define the seperator character for person information entry as "|"
     Sep2 = '\n'						#	Define the seperator character for a new person as a newline
 
@@ -10,7 +10,7 @@ global Dict, datalist					#	Global the required variables
 Dict = {}						#	Set up the dictionary
 datalist = []						#	Define datalist (only used for making the dict)
 
-def MakeDict(datafile, sep1, sep2, print_output):		#	<FUNCTION (MakeDict) BEGIN>
+def MakeDict(datafile, sep1, sep2, print_output):	#	<FUNCTION (MakeDict) BEGIN>
     datafile2 = datafile.readlines()			#	Read the lines from the data file
     res = []						#	Define a result list
     [res.append(x) for x in datafile2 if x not in res]	#	Append all unique items to the list
@@ -27,6 +27,6 @@ def MakeDict(datafile, sep1, sep2, print_output):		#	<FUNCTION (MakeDict) BEGIN>
     pass						#	<FUNCTION (MakeDict) END>
 
 if __name__ == "__main__":				#	Are we running the script itself
-    MakeDict(Data, Sep1, Sep2, True)				#	If so, run the code for making the dictionary from the file
+    MakeDict(Data, Sep1, Sep2, True)			#	If so, run the code for making the dictionary from the file
 else:							#	If we aren't
     pass						#	Don't run anything (call with MakeDict(<datafile>) instead)
