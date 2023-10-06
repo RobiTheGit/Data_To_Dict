@@ -7,3 +7,5 @@ At the moment, it uses the separator "|" to split between infromation for a pers
 Each line is commented into mostly-plain english
 
 Duplicates get removed from the data dictionary before it is even made
+
+Please read the Wiki if you want to use this.
