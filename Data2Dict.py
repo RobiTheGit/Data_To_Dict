@@ -24,9 +24,10 @@ def MakeDict(datafile, sep1, sep2):			#	<FUNCTION (MakeDict) BEGIN>
             Dict[x][x] = dataitem[x]			#	Add the user info into a list in the Dict entry
     if print_output == True: 				#	Are we printing the final dict?       
         print(Dict)					#	if so, print it
+    return Dict						#	Send it to a variable so we can print it later
     pass						#	<FUNCTION (MakeDict) END>
 
 if __name__ == "__main__":				#	Are we running the script itself
-    MakeDict(Data, Sep1, Sep2)					#	If so, run the code for making the dictionary from the file
+    MakeDict(Data, Sep1, Sep2)				#	If so, run the code for making the dictionary from the file
 else:							#	If we aren't
     pass						#	Don't run anything (call with MakeDict(<datafile>) instead)
